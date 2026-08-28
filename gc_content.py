@@ -1,4 +1,5 @@
 def GC_content(sequence): # Create a function
+    """Calculates the GC content of a DNA sequence as a percentage."""
     total_GCs = 0
     for nucleotide in sequence.upper():
         if nucleotide == "G" or nucleotide == "C":
