@@ -15,23 +15,35 @@ codons = {'ATA': 'I', 'ATC': 'I', 'ATT': 'I', 'ATG': 'M',
           'TAC': 'Y', 'TAT': 'Y', 'TAA': '_', 'TAG': '_', 
           'TGC': 'C', 'TGT': 'C', 'TGA': '_', 'TGG': 'W'}
 
-def translated_sequence(sequence):
+def translate_sequence(sequence):
+    # Define function, input is sequence
     """Translates a single DNA sequence into a protein string."""
-    # Docstring "help(translated_sequence)" for the function
+    # Docstring "help(translated_sequence)"
     protein = str()
+    # Create an empty string, store variable in protein
     for i in range(0, len(sequence), 3):
-        codon = sequence[i:i+3] # String slicing to split DNA sequence into codons
+        codon = sequence[i:i+3]
+        # String slicing to split DNA sequence into codons
         protein += codons[codon]
+        # Dictionary lookup to find corresponding amino acid
     return protein
 
 def translate(input_data):
-    """Accepts either a single sequence (str) or s list of sequences."""
+    # Deciding what to do, not direct translation
+    """Accepts either a single sequence (str) or a list of sequences."""
     if isinstance(input_data, list):
+        # Check if the type is a list
         # Same function works for one sequence or many
-        return [translated_sequence(seq) for seq in input_data]
+        return [translate_sequence(seq) for seq in input_data]
+        # If TRUE
     else:
-        return translated_sequence(input_data)
+        return translate_sequence(input_data)
 
 if __name__ == "__main__":
+    # Quick tests
+    print(translate("ATAATC")) # Single sequence
+    print(translate(["ATAATC", "ATGGCA", "GGATCC"])) # List of sequences
+
+    # Interative use
     sequence = input("Enter a DNA sequence: ")
     print(translate(sequence))
