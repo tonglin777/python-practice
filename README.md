@@ -50,4 +50,12 @@ amino_acid_counter("MALWMRLLPLLALLALWGPD")
 # Output: '{'M': 2, 'A': 3, 'L': 8, 'W': 2, 'R': 1, 'P': 2, 'G': 1, 'D': 1}'
 ```
 
+### `most_common_aa.py`
+Finds the most common amino acid in a protein sequence, and how many times it appeara.
+```python
+from most_common_aa import most_common_aa
+most_common_aa("MALWMRLLPLLALLALWGPD")
+# Output: 'The most common amino acid is L , appearing 8 times.'
+```
+
 Working through these codes built up my confidence with loops, dictionaries, string manipulation, and writing reusable functions. I started off writing simple codes for my university Python session and extended it into my own standalone tools.
