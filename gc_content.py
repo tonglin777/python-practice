@@ -12,8 +12,8 @@ def gc_content(sequence): # Create a function
 if __name__ == "__main__":
     # Code is only run directly, not if imported from this file
     sequence = input("Enter a DNA sequence: ")
-    print(f"GC content: {round(gc_content(sequence), 2)}%")
+    print(f"GC content: {gc_content(sequence):.2f}%")
     # f string inserts variable's value inbetween texts
-    # Rounded to 2 decimal places
+    # Rounded to a firxed 2 decimal places
 
 # Use "from gc_content import GC_content"
