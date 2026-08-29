@@ -40,7 +40,7 @@ Builds a position frequency matrix from a list of aligned sequences and generate
 ```python
 from consensus_sequence import consensus_sequence
 consensus_sequence("ATCCAACT", "GGGCAACT", "ATGGATCT")
-# Output: 'Consensus sequence: 'ATGCAACT'
+# Output: 'Consensus sequence: ATGCAACT'
 ```
 
 Working through these codes built up my confidence with loops, dictionaries, string manipulation, and writing reusable functions. I started off writing simple codes for my university Python session and extended it into my own standalone tools.
