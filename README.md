@@ -48,5 +48,6 @@ Counts how many times each amino acid appears in a protein sequence.
 from amino_acid_counter import amino_acid_counter
 amino_acid_counter("MALWMRLLPLLALLALWGPD")
 # Output: '{'M': 2, 'A': 3, 'L': 8, 'W': 2, 'R': 1, 'P': 2, 'G': 1, 'D': 1}'
+```
 
 Working through these codes built up my confidence with loops, dictionaries, string manipulation, and writing reusable functions. I started off writing simple codes for my university Python session and extended it into my own standalone tools.
