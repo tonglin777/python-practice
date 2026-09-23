@@ -51,7 +51,7 @@ amino_acid_counter("MALWMRLLPLLALLALWGPD")
 ```
 
 ### `most_common_aa.py`
-Finds the most common amino acid in a protein sequence, and how many times it appeara.
+Finds the most common amino acid in a protein sequence, and how many times it appears.
 ```python
 from most_common_aa import most_common_aa
 most_common_aa("MALWMRLLPLLALLALWGPD")
